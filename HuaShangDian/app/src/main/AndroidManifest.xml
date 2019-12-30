@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.huashangdian">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_app"
+        android:label="花商店🌺"
+        android:roundIcon="@mipmap/ic_launcher_foreground_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".views.ProfileView" />
+        <activity android:name=".views.CartView" />
+        <activity android:name=".views.WebViewClass" />
+        <activity android:name=".Preferences.SettingsActivity" />
+        <activity android:name=".views.SearchView" />
+        <activity android:name=".views.InfoView" />
+        <activity android:name=".views.NewItemsView" />
+        <activity android:name=".MainPageClass" />
+
+        <activity android:name=".LogInClass">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SplashScreenClass"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

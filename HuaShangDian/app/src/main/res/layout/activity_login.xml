@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    tools:context=".LogInClass">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/shang"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="60dp">
+
+        <TextView
+            android:id="@+id/emailAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="User Name"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/UserName"
+            android:layout_width="300dp"
+            android:layout_height="37dp"
+            android:textColorHint="#FFFFFF"
+            android:hint="Username"
+            android:background="@drawable/edit_text_style"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#FFFFFF" />
+
+
+
+        <TextView
+            android:id="@+id/Pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="Password"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="300dp"
+            android:layout_height="37dp"
+            android:textColorHint="#FFFFFF"
+            android:hint="Password"
+            android:background="@drawable/edit_text_style"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:padding="5dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style"
+                android:text="signup"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/button_style"
+                android:text="Login"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="146dp"
+            android:layout_marginLeft="146dp"
+            android:layout_marginEnd="146dp"
+            android:layout_marginRight="146dp"
+            android:text="Keep me Signed in "
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</LinearLayout>
